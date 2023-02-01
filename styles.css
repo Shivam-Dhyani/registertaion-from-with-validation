@@ -1,0 +1,114 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  background-color: #99b898;
+  margin: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+  margin: 0;
+}
+
+.form {
+  background-color: bisque;
+  outline: none;
+  margin: 0;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 30px 5px rgba(0, 0, 0, 0.6);
+}
+h1 {
+  text-align: center;
+  margin-top: -10px;
+}
+
+label {
+  font-size: larger;
+  font-family: sans-serif;
+}
+
+input {
+  padding: 10px;
+  width: 350px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+#confirmPassword:disabled {
+  filter: brightness(50%);
+}
+
+button {
+  background-color: #ff847c;
+  border: none;
+  padding: 15px 20px;
+
+  border-radius: 10px;
+  font-size: larger;
+  width: 370px;
+}
+button:disabled {
+  filter: brightness(60%);
+}
+
+button:hover {
+  filter: brightness(120%);
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    margin-top: -20px;
+  }
+
+  .form {
+    width: 300px;
+    height: 520px;
+  }
+
+  input {
+    width: 280px;
+  }
+
+  button {
+    width: 300px !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    margin-top: -20px;
+    font-size: 30px;
+  }
+
+  .form {
+    max-width: 240px;
+    height: 520px;
+  }
+
+  input {
+    width: 220px;
+  }
+
+  button {
+    width: 240px !important;
+  }
+}
